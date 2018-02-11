@@ -6,8 +6,7 @@
 ### Address
 ### About us:
 ### Deal of the week
-### Facebook(link), Instagram(link), Email : falconerredlands@gmail.com
-### Yelp(link)
+### Facebook, Instagram, Yelp, Email 
 
 ## Calendar
 ### Current day w/ beer emblem(updated daily)
