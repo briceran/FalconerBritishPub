@@ -6,7 +6,7 @@
 ### Address
 ### About us:
 ### Deal of the week
-### Facebook, Instagram, Yelp, Email 
+### Facebook, Instagram, Yelp, Email
 
 ## Calendar
 ### Current day w/ beer emblem(updated daily)
@@ -15,3 +15,5 @@
 ### Party Rates
 ### Info
 ### (4 Pictures in rotation)
+
+#Uses Twitter Bootstrap for responsiveness.
