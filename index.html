@@ -1,261 +1,657 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Royal Falconer</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Website for Royal Falconer British Pub in Redlands, California.">
-  <meta name="author" content="Brice Randolph">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link href="./assets/css/bootstrap.css" rel="stylesheet">
-  <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet">
-  <style>
+  <head>
+    <meta charset="utf-8">
+    <title>The Royal Falconer, Redlands</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website for Royal Falconer British Pub in Redlands, California.">
+    <meta name="author" content="Brice Randolph">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <style>
 
-  body {
-    padding-bottom: 40px;
-    color: #fff;
-    background-color: #333;
-  }
-
-
-  .navbar-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    margin-top: 20px;
-    margin-bottom: -90px;
-  .navbar-wrapper .navbar {
-
-  }
-
-  .navbar .navbar-inner {
-    border: 0;
-    -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-       -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-            box-shadow: 0 2px 10px rgba(0,0,0,.25);
-  }
-
-  .navbar .brand {
-    padding: 14px 20px 16px;
-    font-weight: bold;
-    text-shadow: 0 -1px 0 rgba(0,0,0,.5);
-  }
-
-  .navbar .nav > li > a {
-    padding: 15px 20px;
-  }
-
-  .navbar .btn-navbar {
-    margin-top: 10px;
-  }
-
-
-
-
-  .carousel {
-    margin-bottom: 60px;
-  }
-
-  .carousel .container {
-    position: relative;
-    z-index: 9;
-  }
-
-  .carousel-control {
-    height: 80px;
-    margin-top: 0;
-    font-size: 120px;
-    text-shadow: 0 1px 1px rgba(0,0,0,.4);
-    background-color: transparent;
-    border: 0;
-    z-index: 10;
-  }
-
-  .carousel .item {
-    height: 500px;
-  }
-  .carousel img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 500px;
-  }
-
-  .carousel-caption {
-    background-color: transparent;
-    position: static;
-    max-width: 550px;
-    padding: 0 20px;
-    margin-top: 200px;
-  }
-  .carousel-caption h1,
-  .carousel-caption .lead {
-    margin: 0;
-    line-height: 1.25;
-    color: #fff;
-    text-shadow: 0 1px 1px rgba(0,0,0,.4);
-  }
-  .carousel-caption .btn {
-    margin-top: 10px;
-  }
-
-
-
-
-  .marketing .span4 {
-    text-align: center;
-  }
-  .marketing h2 {
-    font-weight: normal;
-  }
-  .marketing .span4 p {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-
-
-  .featurette-divider {
-    margin: 80px 0;
-  }
-  .featurette {
-    padding-top: 120px;
-    overflow: hidden;
-  .featurette-image {
-    margin-top: -120px;
-  }
-
-  .featurette-image.pull-left {
-    margin-right: 40px;
-  }
-  .featurette-image.pull-right {
-    margin-left: 40px;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-
-
-
-
-  @media (max-width: 979px) {
-
-    .container.navbar-wrapper {
-      margin-bottom: 0;
-      width: auto;
-    }
-    .navbar-inner {
-      border-radius: 0;
-      margin: -20px 0;
+    body {
+      padding-bottom: 40px;
+      color: #fff;
+      background-color: #333;
     }
 
-    .carousel .item {
-      height: 500px;
-    }
-    .carousel img {
-      width: auto;
-      height: 500px;
+
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px;
+    .navbar-wrapper .navbar {
+
     }
 
-    .featurette {
-      height: auto;
-      padding: 0;
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
     }
-    .featurette-image.pull-left,
-    .featurette-image.pull-right {
-      display: block;
-      float: none;
-      max-width: 40%;
-      margin: 0 auto 20px;
+
+    .navbar .brand {
+      padding: 14px 20px 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
     }
-  }
+
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
 
 
-  @media (max-width: 767px) {
 
-    .navbar-inner {
-      margin: -20px;
-    }
 
     .carousel {
-      margin-left: -20px;
-      margin-right: -20px;
+      margin-bottom: 60px;
     }
-    .carousel .container {
 
+    .carousel .container {
+      position: relative;
+      z-index: 9;
     }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
     .carousel .item {
-      height: 300px;
+      height: 500px;
     }
     .carousel img {
-      height: 300px;
-    }
-    .carousel-caption {
-      width: 65%;
-      padding: 0 70px;
-      margin-top: 100px;
-    }
-    .carousel-caption h1 {
-      font-size: 30px;
-    }
-    .carousel-caption .lead,
-    .carousel-caption .btn {
-      font-size: 18px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
     }
 
-    .marketing .span4 + .span4 {
-      margin-top: 40px;
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+
+    .featurette-divider {
+      margin: 80px 0;
+    }
+    .featurette {
+      padding-top: 120px;
+      overflow: hidden;
+    .featurette-image {
+      margin-top: -120px;
+    }
+
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
     }
 
     .featurette-heading {
-      font-size: 30px;
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
     }
-    .featurette .lead {
-      font-size: 18px;
-      line-height: 1.5;
+
+
+
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
     }
 
-  }
-  </style>
-  <link rel="shortcut icon" href="./assets/img/PUBicon.jpg">
 
-</head>
-<body>
-  <div class="container">
-    <div class = "jumbotron">
-      <h1 class="text-center"><strong>The Royal Falconer</strong></h1>
+    @media (max-width: 767px) {
 
-      <div class="featurette">
-        <h2 class="featurette-heading"><span class="bg-inverse text-white">Events</span></h2>
-      </div>
+      .navbar-inner {
+        margin: -20px;
+      }
 
-      <div id="navbar" class="navbar-collapse collapse">
-        <div>
-          <a href="https://www.facebook.com/RoyalFalconerPubRedlands/" class="nav-btn"><i class="fa fa-facebook"></i></a>
-          <a href="https://www.yelp.com/biz/royal-falconer-british-pub-redlands" class="nav-btn"><i class="fa fa-yelp"></i></a>
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="./assets/img/PUBicon.jpg">
+  </head>
+
+  <body>
+
+
+    <div class="container">
+
+      <div class="navbar-wrapper">
+        <div class="container">
+
+          <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+              <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="brand" href="contact.html">The Royal Falconer, Redlands</a>
+              <div class="nav-collapse collapse">
+                <ul class="nav">
+                  <li class="active"><a href="contact.html">Contact</a></li>
+                  <li><a href="https://www.yelp.com/biz/royal-falconer-british-pub-redlands">Yelp</a></li>
+                  <li><a href="https://www.facebook.com/RoyalFalconerPubRedlands/">Facebook</a></li>
+                </ul>
+                <i class="fa fa-facebook"></i>
+              </div><!--/.nav-collapse -->
+            </div><!-- /.navbar-inner -->
+          </div><!-- /.navbar -->
+
+        </div> <!-- /.container -->
+      </div><!-- /.navbar-wrapper -->
+    </div><!-- /.containerfull-->
+
+
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="./assets/img/PUBgreenburrito.png" alt="Redlands Mountains">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="text-center"><strong>The Royal Falconer</strong></h1>
+              <h1 class="text-center">House Drinks</h1>
+              <p class="text-center">Available in a shot, a cocktail, or a tall glass.
+                <p class="text-center">
+                <strong>Blue Otter Pop </strong>- Raspberry vodka, blue curacao, fresh
+                lemon juice, simple syrup, sweet &amp; sour, topped with Sprite.
+                </p>
+                <p class="text-center">
+                <strong>Don’s Rye-Not Old Fashioned </strong>- Rebel Yell Rye whiskey, sugar,
+                Angostura bitters with roasted orange and lemon slices.
+                </p>
+                <p class="text-center">
+                  <strong>Me-Mum’s Strawberry Lemonade </strong>- Citrus vodka, strawberry schnapps,
+                  simple syrup, fresh moen juice, lemonade, topped with Sprite.
+                </p>
+                <p class="text-center">
+                  <strong>Banana Nut Bread </strong>- RumChata, banana liqueur, a splash of
+                  club soda and Sprite.
+                </p>
+                <p class="text-center">
+                  <strong>Caribbean Screw </strong>- Coconut rum, peach schnapps, and
+                  banana liqueur topped with orange &amp;
+                  pineapple juice, with a splash of milk.
+                </p>
+                <p class="text-center">
+                  <strong>Georgia Peach </strong>- Canadian whiskey, peach schnapps,
+                  and pineapple juice.
+                </p>
+                <p class="text-center">
+                  <strong>California Cooler </strong>- J.Riley California Clear whiskey, peach
+                  schnapps, and a splash of orange juice dropped in energy drink.
+                </p>
+                <p class="text-center">
+                  <strong>Irish Dr. Pepper </strong>- Irish whiskey, butterscotch schnapps,
+                  Irish cream and Dr. Pepper topped with whipped cream.
+                </p>
+                <p class="text-center">
+                  <strong>Sucker Punch </strong>- A shaken blend of Cruzan 151 rum,
+                  peach schnapps, melon liqueur, banana liqueur, and butterscotch
+                  schnapps with orange and pineapple juice.
+                </p>
+                <p class="text-center">
+                  <strong>Unicorn Blood </strong>- Pear cider poured over ice with a float
+                  of red wine.
+                </p>
+                <p class="text-center">
+                  <strong>Molotov Cocktail </strong>- Irish whiskey and Irish cream, with a
+                  splash of butterscotch schnapps.
+                </p>
+                <p class="text-center">
+                  <strong>Blueberry Warhead </strong>- Blueberry vodka, lime juice, and blue
+                  curacao.
+                </p>
+                <p class="text-center">
+                  <strong>Fruit Loop </strong>- Orange, blueberry, and raspberry
+                  vodkas with a blend or orange, pineapple, and cranberry juice, topped
+                  with Sprite and a splash of peach schnapps.
+                </p>
+                <p class="text-center">
+                  <strong>Candy Apple </strong>- Watermelon and sour apple schnapps,
+                  raspberry vodka, topped with energy drink or sprite.
+                </p>
+                <p class="text-center">
+                  <strong>Action Jackson </strong>- Coconut rum, citrus vodka, and melon
+                  liqueur, with a mix of pineapple and cranberry juice.
+                </p>
+                <p class="text-center">
+                  <strong>Riptide Rush </strong>- Citrus vodka and grape pucker topped
+                  with sweet &amp; sour and club soda.
+                </p>
+                <p class="text-center">
+                  <strong>Abuelita </strong>- A blend of RumChata, Patron XO,
+                  whipped cream and cold brew coffee.
+                </p>
+                <p class="text-center">
+                  <strong>Ol-Greg </strong>- An old fashioned Margarita on the
+                  rocks, with a kick of Tabasco and a Tajin rim.
+                </p>
+                <p class="text-center">
+                  <strong>Butterscotch Cookie </strong>- Coffee Liqueur, butterscotch schnapps,
+                  Irish cream and cointreau.
+                </p>
+                <p class="text-center">
+                  <strong>Cranberry Kamikaze </strong>- Vodka, triple sec, lime juice, simple
+                  syrup, a squeeze of fresh lime and a
+                  splash of cranberry juice.
+                </p>
+                <p class="text-center">
+                  <strong>Spritzer Twister </strong>- Vodka, sprite, lime juice and a float of red wine.</li>
+                </p>
+                <p class="text-center">
+                  <strong>The Garcia </strong>- Jameson Irish whisky with Coke and a
+                  splash of pineapple.
+                </p>
+                <p class="text-center">
+                  <strong>T’s Punch </strong>- A delicious, layered treat: melon
+                  liqueur, rum, coconut rum and vodka
+                  with a blend of orange &amp; pineapple
+                  juices, topped with cranberry juice.
+                </p>
+              </p>
+              <p class="lead"></p>
+              <a class="btn btn-large btn-default" href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./assets/img/PUBburger.png" alt="Redlands Royal Falconer view toward mountains.">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="text-center"><strong>Draft Beers</strong></h1>
+              <h2>Lagers</h2>
+              <ul>
+                <li>Stella Artois - Belgian style lager 5.2%</li>
+                <li>Harp - Irish pilsner style lager 5%</li>
+                <li>Bitburger Pils - German pilsner 4.8%</li>
+              </ul>
+              <h2>Ambers/Reds/Browns</h2>
+              <ul>
+                <li>Archer’s Amber (House) - Bayhawk Brew 5%</li>
+                <li>Smithwicks - Irish red ale - 4.5%</li>
+                <li>Hobgoblin - Ruby red ale 5.2%</li>
+                <li>Old Speckled Hen (Nitro) - English Toffee ale 4.5%</li>
+              </ul>
+              <h2>Wheat Beers</h2>
+              <ul>
+                <li>Mango Tart Cart Wheat - Golden Road - 5%</li>
+                <li>Bootleggers Old World Hefeweizen - 5%</li>
+                <li>Blue Moon Belgian White - 5.4%</li>
+              </ul>
+              <h2>India Pale Ales (IPA’s)</h2>
+              <ul>
+                <li>Firestone Union Jack - 7.5%</li>
+                <li>Hop-O- Matic (Local) - 7.1%</li>
+              </ul>
+              <h2>Blonde Ales</h2>
+              <ul>
+                <li>Redlands Nights Orange Blossom Blonde - 5.5%</li>
+                <li>Firestone 805 - 4.7%</li>
+              </ul>
+              <h2>Porters/Stouts</h2>
+              <ul>
+                <li>Henry’s CHocolate Porter - 7.9%</li>
+                <li>Guinness (Nitro) - 4.3%</li>
+              </ul>
+              <h2>Ciders</h2>
+              <ul>
+                <li>Wyder’s Dry Pear - 4%</li>
+                <li>Blackthorn Dry - 5%</li>
+              </ul>
+              <p>*Ask your server about our rotating taps.</p>
+              <p class="lead">Inqueries about rates and drink specials can be made using the contact link above.</p>
+              <h1 class="text-center"><strong>Wine</strong></h1>
+              <p class="text-center">House - Sutter Home - $5 per Glass / $15 per Bottle</p>
+              <ul>
+                <li>Merlot</li>
+                <li>Cabernet Sauvignon</li>
+                <li>Chardonnay</li>
+                <li>Pinot Grigio</li>
+                <li>Sauvignon Blanc</li>
+                <li>Moscato</li>
+                <li>White Zinfandel</li>
+              </ul>
+              <p class="text-center">Mid Shelf - Bogle - $7 per Glass / $21 per Bottle</p>
+              <ul>
+                <li>Essential Red Blend</li>
+                <li>Pinot Noir</li>
+                <li>Chardonnay</li>
+              </ul>
+              <p class="text-center">The Royal Collection - $10 per Glass / $30 per Bottle</p>
+              <ul>
+                <li>J. Lohir - South Ridge Syrah - Napa Valley</li>
+                <li>Belasco de Baquedano - Llama Malbec - Argentina</li>
+                <li>True Myth - Chardonnay - Edna Valley</li>
+              </ul>
+
+              <a class="btn btn-large btn-primary" href="#">Top</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./assets/img/PUBburger.png" alt="Picture of regulars in pub.">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="text-center"><strong>Beer Blend Combos</strong></h1>
+              <ul>
+                <li>Snake Bite - Harp lager mixed with your choice of Apple or Pear Cider.</li>
+                <li>Eclipse - Orange wheat topped with Guinness!</li>
+                <li>Black and Tan - Archer’s Amber topped with Guinness.</li>
+                <li>Black Velvet - Your choice of Apple or Pear cider, topped with Guinness.</li>
+                <li>BlackSmith - Smithwick’s with a float of Guinness.</li>
+                <li>Unicorn Blood - Iced Pear cider with a float of red wine.</li>
+                <li>Shandy - A smooth blend of Harp lager and lemonade.</li>
+                <li>Half &amp; Half - The original - Harp lager with Guinness.</li>
+              </ul>
+              <p class="lead">Comedy Night, Open Mic, Drag Shows, etc.</p>
+              <a class="btn btn-large btn-primary" href="#">Gallery</a>
+            </div>
+          </div>
         </div>
       </div>
+    </div><!-- /.carousel -->
 
-      <p class="text-center"><a class="btn btn-lg" href="index2.html" role="button">
-        <span class="glyphicon glyphicon-th-list"></span></a>
-      </p>
-        <address>
-          <strong>Royal Falconer British Pub</strong><br>
-          106 Orange St<br>
-          Redlands, CA 92373<br>
-          falconerredlands@gmail.com<br>
-          <abbr title="Phone"></abbr>(909) 307-8913
-        </address>
-    </div>
-  </div>
-</body>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+          <img class="img-circle" data-src="./assets/img/PUBburger.png">
+          <h2>Photos</h2>
+          <p>Regulars, bartenders, and diligent staff.</p>
+          <p><a class="btn" href="https://www.facebook.com/RoyalFalconerPubRedlands/">Facebook &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="./assets/img/PUBburger.png">
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <p><a class="btn" href="https://www.yelp.com/biz/royal-falconer-british-pub-redlands">Yelp &raquo;</a></p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="./assets/img/PUBburger.png">
+        <h2 class="featurette-heading"><span class="muted">Events</span></h2>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-left" src="./assets/img/PUBchickencrossfries.png">
+        <p>For enquiries, please stop by the pub!</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="./assets/img/PUBchickencesar.png">
+        <h1 class="text-center"><strong>Wine</strong></h1>
+        <p class="text-center">House - Sutter Home - $5 per Glass / $15 per Bottle</p>
+        <ul>
+          <li>Merlot</li>
+          <li>Cabernet Sauvignon</li>
+          <li>Chardonnay</li>
+          <li>Pinot Grigio</li>
+          <li>Sauvignon Blanc</li>
+          <li>Moscato</li>
+          <li>White Zinfandel</li>
+        </ul>
+        <p class="text-center">Mid Shelf - Bogle - $7 per Glass / $21 per Bottle</p>
+        <ul>
+          <li>Essential Red Blend</li>
+          <li>Pinot Noir</li>
+          <li>Chardonnay</li>
+        </ul>
+        <p class="text-center">The Royal Collection - $10 per Glass / $30 per Bottle</p>
+        <ul>
+          <li>J. Lohir - South Ridge Syrah - Napa Valley</li>
+          <li>Belasco de Baquedano - Llama Malbec - Argentina</li>
+          <li>True Myth - Chardonnay - Edna Valley</li>
+        </ul>
+      </div>
+
+        <h1 class="text-center"><strong>Beer Blend Combos</strong></h1>
+        <ul>
+          <li>Snake Bite - Harp lager mixed with your choice of Apple or Pear Cider.</li>
+          <li>Eclipse - Orange wheat topped with Guinness!</li>
+          <li>Black and Tan - Archer’s Amber topped with Guinness.</li>
+          <li>Black Velvet - Your choice of Apple or Pear cider, topped with Guinness.</li>
+          <li>BlackSmith - Smithwick’s with a float of Guinness.</li>
+          <li>Unicorn Blood - Iced Pear cider with a float of red wine.</li>
+          <li>Shandy - A smooth blend of Harp lager and lemonade.</li>
+          <li>Half &amp; Half - The original - Harp lager with Guinness.</li>
+        </ul>
+        <h1 class="text-center"><strong>Bottled Beers</strong></h1>
+          <h2>Domestics</h2>
+          <ul>
+            <li>Coors Banquet $4</li>
+            <li>  Coors Light</li>
+            <li>  Miller Lite</li>
+            <li>Budweiser $5</li>
+            <li>Bud Light</li>
+            <li>Michelob Ultra</li>
+            <li>Trumer - Berkeley Pilsner</li>
+            <li>Bootleggers - Rocco Red Ale</li>
+            <li>Angry Orchard - Apple Cider</li>
+            <li>Cider Boys - Rasberry Smash or Seasonal</li>
+            <li>Pabst Blue Ribbon - 24oz Tall Boy $6</li>
+            <li>Elysian - Space Dust Double IPA $7</li>
+            <li>Einstök - Wee Heavy Icelandic Ale</li>
+          </ul>
+          <h2>Imports</h2>
+            <ul>
+              <li>Corona - Mexico $5</li>
+              <li>Corona Light - Mexico</li>
+              <li>Dos XX’s - Mexico</li>
+              <li>Modelo - Mexico</li>
+              <li>Franziskaner - Germany - Hefe-weissbier</li>
+              <li>Newcastle - England - Nut Brown Ale $5.5</li>
+              <li>Boddington’s - English Extra Special Bitter $6.5</li>
+              <li>Belhaven - Scotland - Scottish Ale</li>
+              <li>Murphy’s Irish Stout - Ireland</li>
+              <li>Young’s Double Chocolate Stout - England</li>
+              <li>Lindemann’s Framboise - Belgium - Raspberry</li>
+              <li>Lambic $10</li>
+            </ul>
+          <h2>N/A Brews</h2>
+              <ul>
+                <li>St. Pauli Girl N/A - Germany $4</li>
+                <li>Kaliber - Ireland</li>
+              </ul>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Top</a></p>
+        <p>&copy; Copyright 2018 BCR</p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+<!--/* ===================================================
+ * bootstrap-transition.js v2.3.2
+ * http://getbootstrap.com/2.3.2/javascript.html#transitions
+ * ===================================================
+ * Copyright 2013 Twitter, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * ========================================================== */ -->
+
+    <script src="/assets/js/jquery-3.3.1.js"></script>
+    <script src="/assets/js/bootstrap-transition.js"></script>
+    <script src="/assets/js/bootstrap-alert.js"></script>
+    <script src="/assets/js/bootstrap-modal.js"></script>
+    <script src="/assets/js/bootstrap-dropdown.js"></script>
+    <script src="/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="/assets/js/bootstrap-tab.js"></script>
+    <script src="/assets/js/bootstrap-tooltip.js"></script>
+    <script src="/assets/js/bootstrap-popover.js"></script>
+    <script src="/assets/js/bootstrap-button.js"></script>
+    <script src="/assets/js/bootstrap-collapse.js"></script>
+    <script src="/assets/js/bootstrap-carousel.js"></script>
+    <script src="/assets/js/bootstrap-typeahead.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+    <script src="/assets/js/holder/holder.js"></script>
+  </body>
 </html>
