@@ -1,5 +1,8 @@
 # The Royal Falconer
-## Menu
-## Contact
-## Banquet Hall
+## A website designed for the Royal Falconer British Pub in Redlands, California.
+
+## Features
+### Menu
+### Contact
+### Banquet Hall
 ## Uses Twitter Bootstrap for responsiveness.
