@@ -2,7 +2,7 @@
 ## A website designed for the Royal Falconer British Pub in Redlands, California.
 
 ## Features
-### Menu
+### Drink List / Menu
 ### Contact
-### Banquet Hall
+### Lunch Menu
 ## Uses Twitter Bootstrap for responsiveness.
