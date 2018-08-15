@@ -1,414 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>The Royal Falconer, Redlands</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Website for Royal Falconer British Pub in Redlands, California.">
-    <meta name="author" content="Brice Randolph">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="./assets/css/bootstrap.css" rel="stylesheet">
-    <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <style>
+<head>
+  <title>Bootstrap Website Tutorial</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #000;
+    color: #FFF;
+    padding: 1% 0;
+    font-size: 1.2em;
+    border: 0;
+  }
+  .navbar-brand {
+    float: left;
+    min-height: 55px;
+    padding: 0 15px 5px;
+  }
+  .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus,
+   .navbar-inverse .navbar-nav .active a:hover {
+     color: #FFF;
+     background-color: #000;
+   }
+   .navbar-inverse .navbar-nav li a {
+     color: #D5D5D5;
+   }
+   .carousel-caption {
+     top: 50%;
+     transform: translateY(-50%);
+     text-transform: uppercase;
+   }
+   .btn {
+     font-size: 18px;
+     color: #FFF;
+     padding: 12px 22px;
+     background: #000;
+     border: 2px solid #FFF;
+   }
+   .container {
+     margin: 4% auto;
+   }
+   #myCarousel {
+     background-color: #000;
+   }
+   #icon {
+     max-width: 200px;
+     margin: 1% auto;
+   }
+   footer {
+     width: 100%;
+     background-color: #000;
+     padding: 5%;
+     color: #FFF;
+   }
+   .fa {
+     padding: 25px;
+     font-size: 35px;
+     color: #FFF;
+   }
+   .fa:hover {
+     color: #D5D5D5;
+     text-decoration: none;
+   }
+   @media (max-width: 900px) {
+     .fa {
+       font-size: 30px;
+       padding: 20px;
+     }
+   }
+   @media (max-width: 600px) {
+     .carousel-caption {
+       display: none;
+     }
+     #icon {
+       max-width: 150px;
+     }
+     h2 {
+       font-size: 1.7em;
+     }
+   }
 
-    body {
-      padding-bottom: 40px;
-      color: #fff;
-      background-color: #333;
-    }
+  </style>
+</head>
+<body>
+  <nav class= "navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/RoyalFalconerLogo1.png"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-
-    .navbar-wrapper {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 10;
-      margin-top: 80px;
-      margin-bottom: -90px;
-    .navbar-wrapper .navbar {
-
-    }
-
-
-    .featurette-divider {
-      margin: 80px 0;
-    }
-    .featurette {
-      padding-top: 120px;
-      overflow: hidden;
-    .featurette-image {
-      margin-top: -120px;
-    }
-
-    .featurette-image.pull-left {
-      margin-right: 40px;
-    }
-    .featurette-image.pull-right {
-      margin-left: 40px;
-    }
-
-    .featurette-heading {
-      font-size: 84px;
-      font-weight: 300;
-      line-height: 1;
-      letter-spacing: -1px;
-    }
-
-
-
-
-    @media (max-width: 979px) {
-
-      .container.navbar-wrapper {
-        margin-bottom: 0;
-        width: auto;
-      }
-      .navbar-inner {
-        border-radius: 0;
-        margin: 0px 0;
-      }
-
-      .carousel .item {
-        height: 400px;
-      }
-      .carousel img {
-        width: auto;
-        height: 400px;
-      }
-
-      .featurette {
-        height: auto;
-        padding: 0;
-      }
-      .featurette-image.pull-left,
-      .featurette-image.pull-right {
-        display: block;
-        float: none;
-        max-width: 40%;
-        margin: 0 auto 20px;
-      }
-    }
-
-
-    @media (max-width: 767px) {
-      .p{
-        font-size: 24px;
-      }
-      .navbar-inner {
-        margin: 0px;
-      }
-
-      .featurette-heading {
-        font-size: 40px;
-      }
-      .featurette .lead {
-        font-size: 24px;
-        line-height: 2.0;
-      }
-
-    }
-    </style>
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="/assets/js/html5shiv.js"></script>
-    <![endif]-->
-
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="/assets/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="./assets/img/PUBicon.jpg">
-  </head>
-
-  <body>
-    <br>
-    <br>
-    <h1 class="text-center" style="font-family: Times New Roman;"><strong>The Royal Falconer, Redlands</strong></h1>
-    <br>
-    <div class="container">
-        <h1 class="text-center" style="font-family: Times New Roman;"><strong>Burgers and Sandwiches</strong></h1>
-              <p class="text-center">All burgers and sandwiches are served with your choice of shoestring fries,
-              steak fries, cole slaw, potato salad, house salad or a cup of soup. Substitute onion rings, zucchini strips or battered green beans for one dollar.</p>
-              <p class="text-center">Steak Sandwich - Tender, sliced sirloin steak on an alpine roll topped with garlic aioli, grilled onion, lettuce, tomato and red onion 14</p>
-              <p class="text-center">Hot Corned Beef - Thinly sliced corned beef smothered in melted Swiss cheese and carmelized onion on rye bread. Served with a side of whole grain mustard. 12</p>
-              <p class="text-center">Beef Dip  - Deli sliced, slow roasted beef smothered in melted Swiss cheese on an alpine roll. Served with a side of au jus. 12</p>
-              <p class="text-center">Veggie Melt - Sliced pepper jack cheese and avocado relish spread with romaine lettuce, tomato and red onion. Served hot on sourdough bread. 12</p>
-              <p class="text-center">Ham Sammie - Sliced Black Forest ham and melted cheddar cheese with whole grain mustard and pickle chips. Served hot on whole wheat bread. 12</p>
-              <p class="text-center">Caprese Sandwich - Fresh mozzarella cheese, basil leaves and tomato topped with bacon. Served on an alpine roll with balsamic vinaigrette on the side. 12</p>
-              <p class="text-center">Falconer Club - Sliced Black Forest ham, turkey breast and swiss cheese stacked on white bread and layered with sliced zucchini and romesco. 12</p>
-              <p class="text-center">Apple Turkey Melt - Thinly sliced apple and turkey breast with bleu cheese crumbles, romaine lettuce and caramel vinaigrette. Served hot on whole wheat bread. 12</p>
-              <p class="text-center">Half Beef Dip and Side - Deli sliced beef with swiss cheese on an alpine roll. Served with fries. 8</p>
-              <p class="text-center">Falcon Talons and Fries - Chicken breast strips breaded and cooked to golden brown. Served with waffle fries. 8</p>
-              <br>
-              <br>
-              <div class="container">
-                        <img src="./assets/img/PUBgreenburrito2.png" alt="burger">
-                        <img src="./assets/img/PUBchickenstrips.JPG" alt="falcon talons and fries">
-                        <img src="./assets/img/PUBtikimars.png" alt="Chicken Tikka Masala">
-                        <img src="./assets/img/PUBpizza2.png" alt="chicken">
-                        <img src="./assets/img/PUBfish.png" alt="fish">
-                        <img src="./assets/img/PUBburger.png" alt="burger">
-                        <img src="./assets/img/PUBchickencesar.png" alt="cesar salad">
-                        <img src="./assets/img/PUBsteaksandwich.png" alt="steak sandwich">
-                </div>
-              <h1 class="text-center" style="font-family: Times New Roman;">Specialties</h1>
-              <p class="text-center">All dinners are served with seasonal vegetables.</p>
-              <p class="text-center">Shepherd's Pie - An English favorite! Slow-cooked braised beef mixed with white onion, peas and gravy then topped with golden brown mashed potatoes. Served with a side of seasonal vegetables. 12</p>
-              <p class="text-center">Bangers and Mash - Two plump British sausages served with a side of mashed potatoes, topped with gravy. 12</p>
-              <p class="text-center">Cornish Pasty - Originally from Cornwall, a puffy pastry pouch stuffed with seasoned ground beef, peas, carrots, onion and potatoes then baked to a golden brown. Served with seasonal vegetables and your choice of chips (fries) or mashed potatoes and gravy. 12</p>
-              <p class="text-center">Chicken Tikka Masala - Chunked, grilled chicken breast mixed with seasonal vegetables and savory house made curry, served atop a bed of white rice. 12</p>
-              <br>
-              <br>
-              <h1 class="text-center" style="font-family: Times New Roman;">Seafood</h1>
-              <p class="text-center">Cod and Chips - A special Hostings recipe from across the pond...A British staple!  Delicious, flaky cod dipped in our house made beer batter and fried to a golden brown. Served with our own tartar sauce, a side of fries and your choice of coleslaw or peas. 10-17</p>
-              <p class="text-center">Beer Battered Fish Tacos - Our famous beer battered cod piled high with spicy cilantro slaw on two flour tortillas. 9</p>
-              <p class="text-center">Grilled Fish Tacos  - Seasoned and grilled cod, topped with our spicy cilantro slaw on flour tortillas. 12
-              <br>
-              <br>
-              <h1 class="text-center" style="font-family: Times New Roman;">Salads and Soup</h1>
-              <p class="text-center">Dressings: Bleu Cheese, Ranch, Honey Mustard, 1000 Island, Italian, Poppy Seed and Oil and Vinegar</p>
-              <p class="text-center">House Salad - Carrots, cucumber, heirloom cherry tomatoes and croutons on a bed of spring mix. 7</p>
-              <p class="text-center">Caesar - Crisp romaine lettuce tossed with Caesar dressing, croutons and parmesan cheese. 7</p>
-              <p class="text-center">Chef Salad - Sliced Black Forest ham, turkey breast, cheddar and Swiss cheese with diced tomato, red onion and sliced egg atop a bed of greens. 12</p>
-              <p class="text-center">Soup of the Day - Ask your server about today's soup selection. Clam Chowder available every Friday! Cup 4 Bowl 5.5
-              <br>
-
-              <br>
-              <h1 class="text-center" style="font-family: Times New Roman;">Desserts and Beverages</h1>
-              <p class="text-center">J. Riley 1775 Whiskey Cheesecake - Rich, creamy cheesecake flavored with J.Riley 1775 Whiskey in a chocolate/caramel drizzle. 7</p>
-              <p class="text-center">Brownie Sundae - Ghirardelli chocolate brownie topped with vanilla bean ice cream, whipped cream and a chocolate drizzle. 5</p>
-              <p class="text-center">Seasonal Dessert Special - Ask your server for today's dessert special.</p>
-              <p class="text-center">Beverages : Coke, Diet Coke, Sprite, Dr. Pepper, Ginger Ale, Lemonade, Iced Tea, Coffee or Hot Tea</p>
-              <br>
-              <br>
-            </div>
-
-          <div class="container">
-            <a class="btn btn-large btn-warning" href="contact.html">Follow Us</a>
-            <a class="btn btn-large" href="https://www.ubereats.com/"><img src="./assets/img/Eats_Logo_Whit_Horiz.png" alt="Uber Eats"></a>
-            <h1 class="text-center" style="font-family: Times New Roman;">House Drinks</h1>
-            <br>
-            <br>
-            <p class="text-center">Available in a shot, a cocktail, or a tall glass.</p>
-            <br>
-            <br>
-            <h2>Blue Otter Pop - Raspberry vodka, blue curacao, fresh
-            lemon juice, simple syrup, sweet &amp; sour, topped with Sprite.</h2>
-            <h2>Don’s Rye-Not Old Fashioned - Rebel Yell Rye whiskey, sugar, Angostura bitters with roasted orange and lemon slices.</h2>
-            <h2>Me-Mum’s Strawberry Lemonade - Citrus vodka, strawberry schnapps, simple syrup, fresh moen juice, lemonade, topped with Sprite.</h2>
-            <h2>Banana Nut Bread - RumChata, banana liqueur, a splash of
-              club soda and Sprite.</h2>
-            <h2>Caribbean Screw - Coconut rum, peach schnapps, and
-              banana liqueur topped with orange &amp;
-              pineapple juice, with a splash of milk.</h2>
-            <h2>Georgia Peach - Canadian whiskey, peach schnapps,
-              and pineapple juice.</h2>
-            <h2>California Cooler - J.Riley California Clear whiskey, peach
-              schnapps, and a splash of orange juice dropped in energy drink.</h2>
-            <h2>Irish Dr. Pepper - Irish whiskey, butterscotch schnapps, Irish cream and Dr. Pepper topped with whipped cream.</h2>
-            <h2>Sucker Punch - A shaken blend of Cruzan 151 rum,
-              peach schnapps, melon liqueur, banana liqueur, and butterscotch schnapps with orange and pineapple juice.</h2>
-            <h2>Unicorn Blood - Pear cider poured over ice with a float of red wine.</h2>
-            <h2>Molotov Cocktail - Irish whiskey and Irish cream, with a splash of butterscotch schnapps.</h2>
-            <h2>Blueberry Warhead - Blueberry vodka, lime juice, and blue curacao.</h2>
-            <h2>Fruit Loop - Orange, blueberry, and raspberry
-              vodkas with a blend or orange, pineapple, and cranberry juice, topped with Sprite and a splash of peach schnapps.</h2>
-            <h2>Candy Apple - Watermelon and sour apple schnapps,
-              raspberry vodka, topped with energy drink or sprite.</h2>
-            <h2>Action Jackson - Coconut rum, citrus vodka, and melon
-              liqueur, with a mix of pineapple and cranberry juice.</h2>
-            <h2>Riptide Rush - Citrus vodka and grape pucker topped
-              with sweet &amp; sour and club soda.</h2>
-            <h2>Abuelita - A blend of RumChata, Patron XO,
-              whipped cream and cold brew coffee.</h2>
-            <h2>Ol-Greg - An old fashioned Margarita on the rocks, with a kick of Tabasco and a Tajin rim.</h2>
-            <h2>Butterscotch Cookie - Coffee Liqueur, butterscotch schnapps, Irish cream and cointreau.</h2>
-            <h2>Cranberry Kamikaze - Vodka, triple sec, lime juice, simple syrup, a squeeze of fresh lime and a splash of cranberry juice.</h2>
-            <h2>Spritzer Twister - Vodka, sprite, lime juice and a float of red wine.</h2>
-            <h2>The Garcia - Jameson Irish whisky with Coke and a splash of pineapple.</h2>
-            <h2>T’s Punch - A delicious, layered treat: melon liqueur, rum, coconut rum and vodka with a blend of orange &amp; pineapple juices, topped with cranberry juice.</h2>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="img/Carousel1.png">
+        <div class="carousel-caption">
+          <h1>Welcome to the Royal Falconer</h1>
+          <br>
+          <button type="button" class="btn btn-default">Food Menu</button>
         </div>
-
-          <p class="text-center"><a class="btn btn-large btn-primary" href="menu.html">Lunch Menu</a></p>
-
-    <hr class="featurette-divider">
-    <div class="featurette">
-      <h2 class="featurette-heading"><span class="muted">Upstairs includes stereo, tv, private bar, restroom and dart board. Call for more info! (909) 307-8913</span></h2>
-      <img src="./assets/img/PUBupstairs1.jpg" alt="upstairs1">
-      <img src="./assets/img/PUBupstairs2.jpg" alt="upstairs2">
-      <img src="./assets/img/PUBupstairs3.jpg" alt="upstairs3">
-      <img src="./assets/img/PUBupstairs4.jpg" alt="upstairs4">
+        </div> <!--- End Active--->
+        <div class="item">
+          <img src="img/Carousel1.png">
+        </div>
+        <div class="item">
+          <img src="img/Carousel1.png">
+        </div>
     </div>
-    <hr class="featurette-divider">
-    <div class="featurette">
+    <!--- Start Slider Controls-->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+    </a>
+  </div> <!--- End Slider -->
+
+  <div class="container text-center">
+    <h2><em>Established in 1999, the Royal Falconer is Redlands' oldest pub.  With savory cuisine, daily drink specials and live entertainment, the Falconer remains a long-standing local favorite.<em></h2>
+    <br>
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="img/FishnChipsOnWood512.png" id="icon">
+          <h4>Seafood</h4>
+        </div>
+        <div class="col-sm-4">
+          <img src="img/burger.png" id="icon">
+          <h4>Burgers And Sandwiches</h4>
+        </div>
+        <div class="col-sm-4">
+          <img src="img/BrownieSunday.png" id="icon">
+          <h4>Desserts And Beverages</h4>
+        </div>
+      </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Lunch Menu - Each Item Only $8</h3>
+        <h5>Everyday (open-3pm)</h5>
+        <h5>Add soup or salad to each meal - 3</h5>
+        <p><strong>Buffalo Talon Wrap</strong> Falcon talons tossed in buffalo with lettuce, tomatoes and ranch dressing wrapped in a flour tortilla.
+          <br><strong>Grill Cod and Veggie</strong> Grilled cod on a bed of zucchini and bell pepper medley, served with side of rice.
+          <br><strong>Sausage Roll</strong> Sausage seasoned for any palate, enclosed in a puffed pastry roll. Served with side of fries and grilled zucchini.
+          <br><strong>Half Beef Dip and Side</strong> Deli sliced beef with swiss cheese on an alpine roll. Served with fries.
+          <br><strong>Half Cod and Chips</strong> Cod dipped in a house made beer batter. Served with a side of fries.
+          <br><strong>Falcon Talons and Fries</strong> Chicken breast strips breaded and cooked to golden brown. Served with waffle fries.</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="img/BuffaloTalonWrap.png" class="img-responsive">
+        <h4>Buffalo Talon Wrap</h4>
+      </div>
     </div>
-    <hr class="featurette-divider">
-    <div class="featurette">
+  </div>
 
-    <div class="container">
-      <h1 class="text-center"><strong>Wine</strong></h1>
-        <p class="text-center">House - Sutter Home - 5 per Glass / 15 per Bottle</p>
-      <ul>
-          <li>Merlot</li>
-          <li>Cabernet Sauvignon</li>
-          <li>Chardonnay</li>
-          <li>Pinot Grigio</li>
-          <li>Sauvignon Blanc</li>
-          <li>Moscato</li>
-          <li>White Zinfandel</li>
-        </ul>
-        <p class="text-center">Mid Shelf - Bogle - 7 per Glass / 21 per Bottle</p>
-        <ul>
-          <li>Essential Red Blend</li>
-          <li>Pinot Noir</li>
-          <li>Chardonnay</li>
-        </ul>
-        <p class="text-center">The Royal Collection - 10 per Glass / 30 per Bottle</p>
-        <ul>
-          <li>J. Lohir - South Ridge Syrah - Napa Valley</li>
-          <li>Belasco de Baquedano - Llama Malbec - Argentina</li>
-          <li>True Myth - Chardonnay - Edna Valley</li>
-        </ul>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <h4>Reserve Upstairs!</h4>
+        <p>Upstairs includes private bar, restroom, tv, stereo and dart board. <a href="index.html#contact">Contact us</a> for more info.
+        </p>
       </div>
-    <div class="container">
-      <h1 class="text-center"><strong>Draft Beers</strong></h1>
-      <h2>Lagers</h2>
-      <ul>
-        <li>Stella Artois - Belgian style lager 5.2%</li>
-        <li>Harp - Irish pilsner style lager 5%</li>
-        <li>Bitburger Pils - German pilsner 4.8%</li>
-      </ul>
-      <h2>Ambers/Reds/Browns</h2>
-      <ul>
-        <li>Archer’s Amber (House) - Bayhawk Brew 5%</li>
-        <li>Smithwicks - Irish red ale - 4.5%</li>
-        <li>Hobgoblin - Ruby red ale 5.2%</li>
-        <li>Old Speckled Hen (Nitro) - English Toffee ale 4.5%</li>
-      </ul>
-      <h2>Wheat Beers</h2>
-      <ul>
-        <li>Mango Tart Cart Wheat - Golden Road - 5%</li>
-        <li>Bootleggers Old World Hefeweizen - 5%</li>
-        <li>Blue Moon Belgian White - 5.4%</li>
-      </ul>
-      <h2>India Pale Ales (IPA’s)</h2>
-      <ul>
-        <li>Firestone Union Jack - 7.5%</li>
-        <li>Hop-O- Matic (Local) - 7.1%</li>
-      </ul>
-      <h2>Blonde Ales</h2>
-      <ul>
-        <li>Redlands Nights Orange Blossom Blonde - 5.5%</li>
-        <li>Firestone 805 - 4.7%</li>
-      </ul>
-      <h2>Porters/Stouts</h2>
-      <ul>
-        <li>Henry’s CHocolate Porter - 7.9%</li>
-        <li>Guinness (Nitro) - 4.3%</li>
-      </ul>
-      <h2>Ciders</h2>
-      <ul>
-        <li>Wyder’s Dry Pear - 4%</li>
-        <li>Blackthorn Dry - 5%</li>
-      </ul>
-        <h1 class="text-center"><strong>Beer Blend Combos</strong></h1>
-        <ul>
-          <li>Snake Bite - Harp lager mixed with your choice of Apple or Pear Cider.</li>
-          <li>Eclipse - Orange wheat topped with Guinness!</li>
-          <li>Black and Tan - Archer’s Amber topped with Guinness.</li>
-          <li>Black Velvet - Your choice of Apple or Pear cider, topped with Guinness.</li>
-          <li>BlackSmith - Smithwick’s with a float of Guinness.</li>
-          <li>Unicorn Blood - Iced Pear cider with a float of red wine.</li>
-          <li>Shandy - A smooth blend of Harp lager and lemonade.</li>
-          <li>Half &amp; Half - The original - Harp lager with Guinness.</li>
-        </ul>
-        <h1 class="text-center"><strong>Bottled Beers</strong></h1>
-          <h2>Domestics</h2>
-          <ul>
-            <li>Coors Banquet 4</li>
-            <li>  Coors Light</li>
-            <li>  Miller Lite</li>
-            <li>Budweiser 5</li>
-            <li>Bud Light</li>
-            <li>Michelob Ultra</li>
-            <li>Trumer - Berkeley Pilsner</li>
-            <li>Bootleggers - Rocco Red Ale</li>
-            <li>Angry Orchard - Apple Cider</li>
-            <li>Cider Boys - Rasberry Smash or Seasonal</li>
-            <li>Pabst Blue Ribbon - 24oz Tall Boy 6</li>
-            <li>Elysian - Space Dust Double IPA 7</li>
-            <li>Einstök - Wee Heavy Icelandic Ale</li>
-          </ul>
-          <h2>Imports</h2>
-            <ul>
-              <li>Corona - Mexico 5</li>
-              <li>Corona Light - Mexico</li>
-              <li>Dos XX’s - Mexico</li>
-              <li>Modelo - Mexico</li>
-              <li>Franziskaner - Germany - Hefe-weissbier</li>
-              <li>Newcastle - England - Nut Brown Ale 5.5</li>
-              <li>Boddington’s - English Extra Special Bitter 6.5</li>
-              <li>Belhaven - Scotland - Scottish Ale</li>
-              <li>Murphy’s Irish Stout - Ireland</li>
-              <li>Young’s Double Chocolate Stout - England</li>
-              <li>Lindemann’s Framboise - Belgium - Raspberry</li>
-              <li>Lambic 10</li>
-            </ul>
-          <h2>N/A Brews</h2>
-              <ul>
-                <li>St. Pauli Girl N/A - Germany 4</li>
-                <li>Kaliber - Ireland</li>
-              </ul>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <img src="img/UpstairsReservation.png" class="img-responsive">
       </div>
-      <hr class="featurette-divider">
-      <footer>
-        <p><a href="#">18% gratuity will be added to groups of 6 or more</a></p>
-      </footer>
-</div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <h4>Lavosh</h4>
+        <p>A 15" Armenian round cracker bread covered with melted jack cheese. Served with our house made salsa. Add Chicken to any Lavosh $3.5
+        </p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <img src="img/Lavosh.png" class="img-responsive">
+      </div>
+    </div>
+  </div>
 
+  <div class="container">
+    <div class="row">
+      <h4 class="text-center"><a href="#hidden" data-toggle="collapse">Full Menu</a></h4>
+        <div id="hidden" class="collapse">
+        <h4>Appetizers</h4>
+        <p><strong>Falcon Wings</strong> Chicken wings smothered in wing sauce and served with house made bleu cheese dressing and celery. 9 Add fries 1.5
+        <br><strong>Falcon Talons</strong> Chicken breast strips breaded and cooked to golden brown.  With your choice of two dipping sauces. 9 Add fries 1.5
+        <br><strong>Irish Nachos</strong> Shoestring fries covered in shredded jack and cheddar cheese.  Topped with tomatoes, chives and bacon bits, served with salsa and sour cream on the side. 9 Substitute bacon with corned beed for one dollar.
+        <br><strong>Torpedo Shrimp</strong> Torpedo shaped, tail-on shrimp hand breaded with fresh panko. Served with sweet Thai chili sauce. 7
+        <br><strong>Scotch Eggs</strong> Two hard boiled eggs with a golden brown breaded sausage shell. Served with whole grain mustard. 8
+        <br><strong>English Sausage Roll</strong> Sausage seasoned for any palate, enclosed in a puffed pastry roll. 9
+        <br><strong>Curry Chips</strong> French Fried Potatoes lightly tossed in curry powder with a side of our house made curry. 7
+        <br><strong>Zucchini Strips</strong> Lightly battered strips of zucchini served with house made ranch dressing. 8
+        <br><strong>Crispy Green Beans</strong> Whole petite green beans coated in a delicious toasted onion batter. Served with a side of ranch dressing. 8
+        <br><strong>Basket of Chips</strong> Steak fries. 5 Shoestring fries. 5 Waffle fries (Seasoned, crisscut fries). 7 Pub Crisps (Freshly fried potato chips). 5
+        <br><strong>Mac & Cheese Bites</strong> Deep fried, battered nuggets filled with macaroni & cheese. Served with a side of ranch dressing. 8
+        <br><strong>Onion Rings</strong> Freshly cut onion slices lightly battered and fried to a golden brown. Served with ranch dressing. 8
+        <br><strong>Jalapeno Poppers</strong> Cheddar cheese stuffed jalapenos lightly breaded and deep fried to perfection. Served with ranch dressing. 8</p>
+        <h4>Burgers And Sandwiches</h4>
+        <p>All burgers and sandwiches are served with your choice of shoestring fries, steak fries, cole slaw, potato salad, house salad or cup of soup. Substitute onion rings, zucchini strips or battered green beans for one dollar.</p>
+        <p><strong>Build Your Own Burger</strong>
+        <br>PICK YOUR PATTY: Hand-packed Ground Beef or Turkey/Grilled Chicken Breast/Battered Cod Filet/Black Bean Veggie
+        <br>CHOOSE YOUR CHEESE: Cheddar/Swiss/Pepper Jack/Bleu Cheese Crumbles
+        <br>TOPPED WITH: Lettuce, tomato, red onion, pickle and roast garlic aioli. 12
+        <br>ADD-ONS: Avocado/Bacon/Fried Egg/Extra Cheese. One dollar each.
+        <br><strong>Falconer Club</strong> Sliced Black Forest ham, turkey breast and swiss cheese stacked on white bread and layered with sliced zucchini and romesco. 12
+        <br><strong>Apple Turkey Melt</strong> Thinly sliced apple and turkey breast with bleu cheese crumbles, romaine lettuce and caramel vinaigrette. Served hot on whole wheat bread. 12
+        <br><strong>Steak Sandwich</strong> Tender, sliced sirloin steak on an alpine roll topped with garlic aioli, grilled onion, lettuce, tomato and red onion. 14
+        <br><strong>Hot Corned Beef</strong> Thinly sliced corned beef smothered in melted Swiss cheese and caramelized onion on rye bread. Served with a side of whole grain mustard. 12
+        <br><strong>Beef Dip</strong> Deli sliced, slow roasted beef smothered in melted Swiss cheese on an alpine roll. Served with a side of au jus. 12
+        <br><strong>Veggie Melt</strong> Sliced pepper jack cheese and avocado relish spread with romaine lettuce, tomato and red onion. Served hot on sourdough bread. 12
+        <br><strong>Ham Sammie</strong> Sliced Black Forest ham and melted cheddar cheese with whole grain mustard and pickle chips. Served hot on whole wheat bread. 12
+        <br><strong>Caprese Sandwich</strong> Fresh mozzarella cheese, basil leaves and tomato topped with bacon. Served on an Alpine roll with balsamic vinaigrette on the side. 12</p>
+        <h4>Specialties</h4>
+        <p>All dinners are served with seasonal vegetables.</p>
+        <p><strong>Shepherd's Pie</strong> An English favorite! Slow-cooked braised beef mixed with white onion, peas and gravy then topped with golden brown mashed potatoes. Served with a side of seasonal vegetables. 12
+        <br><strong>Bangers & Mash</strong> Two plump British sausages served with a side of mashed potatoes, topped with gravy. 12
+        <br><strong>Cornish Pasty</strong> Originally from Cornwall, a puff pastry pouch stuffed with seasoned ground beef, peas, carrots, onion and potatoes then baked to a golden brown. Served with seasonal vegetables and your choice of chips (fries) or mashed potatoes and gravy. 12
+        <br><strong>Chicken Tikka Masala</strong> Chunked, grilled chicken breast mixed with seasonal vegetables and savory house made curry, served atop a bed of white rice. 12</p>
+        <h4>Seafood</h4>
+        <p><strong>Cod & Chips</strong> A special Hostings recipe from across the pond...A British staple! Delicious, flaky cod dipped in our house made beer batter and fried to a golden brown. Served with our own tartar sauce, a side of fries and your choice of coleslaw or peas. 12 Half order. 10 King size order. 17
+        <br><strong>Beer Battered Fish Tacos</strong> Our famous beer battered cod piled high with spicy cilantro slaw on two flour tortillas. 9
+        <br><strong>Grilled Fish Tacos</strong> Seasoned and grilled cod, topped with our spicy cilantro slaw on flour tortillas. 12</p>
+        <h4>Salads & Soup</h4>
+        <p>Dressings: Bleu Cheese, Ranch, Honey Mustard, 1000 Island, Italian, Poppy Seed and Oil & Vinegar</p>
+        <p><strong>House Salad</strong> Carrots, cucumber, heirloom cherry tomatoes and croutons on a bed of spring mix. 7 With Chicken. 10.5 With Steak. 12
+        <br><strong>Caesar</strong> Crisp romaine lettuce tossed with Caesar dressing, croutons and parmesan cheese. 7 With Chicken. 10.5 With Steak. 12
+        <br><strong>Chef Salad</strong> Sliced Black Forest ham, turkey breast, cheddar and Swiss cheese with diced tomato, red onion and sliced egg atop a bed of greens. 12
+        <br><strong>Soup of the Day</strong> Ask your server about today's soup selection. Clam Chowder available every Friday! Cup of Soup. 4 Bowl of Soup. 5.5</p>
+        <h4>SOUP, SALAD OR 1/2 SANDWICH (You Pick Two) 10</h4>
+        <p>Choose any TWO:
+        <br>Soup of the Day
+        <br>Salad Choices: House or Caesar
+        <br>Sandwich Choices: Ham Sammie, Beef Dip, Corned Beef, Apple Turkey Melt or Veggie Melt</p>
+        <h4>Desserts And Beverages</h4>
+        <p><strong>J.Riley 1775 Whiskey Cheesecake</strong> Rich, creamy cheesecake flavored with J.Riley 1775 Whiskey in a chocolate cookie crust and topped with whipped cream and a chocolate/caramel drizzle. 7
+        <br><strong>Brownie Sundae</strong> Ghirardelli chocolate brownie topped with vanilla bean ice cream, whipped cream and a chocolate drizzle. 5
+        <br><strong>Seasonal Dessert Special</strong> Ask your server for today's dessert special.
+        <br><strong>Beverages</strong> Coke, Diet Coke, Sprite, Dr Pepper, Ginger Ale, Lemonade, Iced Tea, Coffee or Hot Tea</p>
+      </div>
+    </div>
+  </div>
 
-<!--/* ===================================================
- * bootstrap-transition.js v2.3.2
- * http://getbootstrap.com/2.3.2/javascript.html#transitions
- * ===================================================
- * Copyright 2013 Twitter, Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * ========================================================== */ -->
+  <footer class="container-fluid text-center">
+    <div class="row">
+      <div id="contact" class="col-sm-4">
+        <h3>Contact Us</h3>
+        <br>
+        <h4>106 Orange St, Redlands CA</h4>
+        <h4>(909) 307-8913</h4>
+        <h4><a href="mailto:falconerredlands@gmail.com">falconerredlands@gmail.com</a></h4>
+      </div>
+      <div class="col-sm-4">
+        <h3>Connect</h3>
+        <a href="fb://profile/227586780479" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/royalfalconerredlands/" target="blank" class="fa fa-instagram"></a>
+        <a href="https://www.yelp.com/biz/royal-falconer-british-pub-redlands" target="blank" class="fa fa-yelp"></a>
+      </div>
+      <div class="col-sm-4">
+        <img src="img/RoyalFalconerLogo2hq.png" class="icon">
+      </div>
+    </div>
+  </footer>
 
-    <script src="/assets/js/jquery-3.3.1.js"></script>
-    <script src="/assets/js/bootstrap-transition.js"></script>
-    <script src="/assets/js/bootstrap-alert.js"></script>
-    <script src="/assets/js/bootstrap-modal.js"></script>
-    <script src="/assets/js/bootstrap-dropdown.js"></script>
-    <script src="/assets/js/bootstrap-scrollspy.js"></script>
-    <script src="/assets/js/bootstrap-tab.js"></script>
-    <script src="/assets/js/bootstrap-tooltip.js"></script>
-    <script src="/assets/js/bootstrap-popover.js"></script>
-    <script src="/assets/js/bootstrap-button.js"></script>
-    <script src="/assets/js/bootstrap-collapse.js"></script>
-    <script src="/assets/js/bootstrap-carousel.js"></script>
-    <script src="/assets/js/bootstrap-typeahead.js"></script>
-    <script>
-      !function ($) {
-        $(function(){
-          // carousel demo
-          $('#myCarousel').carousel()
-        })
-      }(window.jQuery)
-    </script>
-    <script src="/assets/js/holder/holder.js"></script>
-  </body>
+</body>
 </html>
